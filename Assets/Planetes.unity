@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 170374438}
   - component: {fileID: 170374437}
   - component: {fileID: 170374436}
+  - component: {fileID: 170374440}
   m_Layer: 0
   m_Name: Soleil
   m_TagString: Untagged
@@ -231,6 +232,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &170374440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170374435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0795ccabc63332c41bbb3d43bc43c679, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotationPlanete
+  dureeRotation: 10
+  axeRotation: {x: 0, y: 1, z: 0}
 --- !u!1 &314256583
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,6 +258,7 @@ GameObject:
   - component: {fileID: 314256586}
   - component: {fileID: 314256585}
   - component: {fileID: 314256584}
+  - component: {fileID: 314256588}
   m_Layer: 0
   m_Name: Jupiter
   m_TagString: Untagged
@@ -343,6 +359,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &314256588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314256583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0795ccabc63332c41bbb3d43bc43c679, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotationPlanete
+  dureeRotation: 10
+  axeRotation: {x: 0, y: 1, z: 0}
 --- !u!1 &389347901
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,6 +385,7 @@ GameObject:
   - component: {fileID: 389347904}
   - component: {fileID: 389347903}
   - component: {fileID: 389347902}
+  - component: {fileID: 389347906}
   m_Layer: 0
   m_Name: Saturne
   m_TagString: Untagged
@@ -455,6 +486,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &389347906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389347901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0795ccabc63332c41bbb3d43bc43c679, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotationPlanete
+  dureeRotation: 10
+  axeRotation: {x: 0, y: 1, z: 0}
 --- !u!1 &449870354
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,6 +512,7 @@ GameObject:
   - component: {fileID: 449870357}
   - component: {fileID: 449870356}
   - component: {fileID: 449870355}
+  - component: {fileID: 449870359}
   m_Layer: 0
   m_Name: Uranus
   m_TagString: Untagged
@@ -567,6 +613,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &449870359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449870354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0795ccabc63332c41bbb3d43bc43c679, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotationPlanete
+  dureeRotation: 10
+  axeRotation: {x: 0, y: 1, z: 0}
 --- !u!1001 &479916667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -644,6 +704,7 @@ GameObject:
   - component: {fileID: 577685954}
   - component: {fileID: 577685953}
   - component: {fileID: 577685952}
+  - component: {fileID: 577685956}
   m_Layer: 0
   m_Name: Mars
   m_TagString: Untagged
@@ -744,6 +805,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &577685956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577685951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0795ccabc63332c41bbb3d43bc43c679, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotationPlanete
+  dureeRotation: 10
+  axeRotation: {x: 0, y: 1, z: 0}
 --- !u!1 &653530772
 GameObject:
   m_ObjectHideFlags: 0
@@ -756,6 +831,7 @@ GameObject:
   - component: {fileID: 653530775}
   - component: {fileID: 653530774}
   - component: {fileID: 653530773}
+  - component: {fileID: 653530777}
   m_Layer: 0
   m_Name: Neptune
   m_TagString: Untagged
@@ -856,6 +932,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &653530777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653530772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0795ccabc63332c41bbb3d43bc43c679, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotationPlanete
+  dureeRotation: 10
+  axeRotation: {x: 0, y: 1, z: 0}
 --- !u!1 &676326082
 GameObject:
   m_ObjectHideFlags: 0
@@ -868,6 +958,7 @@ GameObject:
   - component: {fileID: 676326085}
   - component: {fileID: 676326084}
   - component: {fileID: 676326083}
+  - component: {fileID: 676326087}
   m_Layer: 0
   m_Name: Mercure
   m_TagString: Untagged
@@ -968,6 +1059,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &676326087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676326082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0795ccabc63332c41bbb3d43bc43c679, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotationPlanete
+  dureeRotation: 10
+  axeRotation: {x: 0, y: 1, z: 0}
 --- !u!1 &916502265
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,6 +1116,7 @@ GameObject:
   - component: {fileID: 997668621}
   - component: {fileID: 997668620}
   - component: {fileID: 997668619}
+  - component: {fileID: 997668623}
   m_Layer: 0
   m_Name: Venus
   m_TagString: Untagged
@@ -1111,6 +1217,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &997668623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997668618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0795ccabc63332c41bbb3d43bc43c679, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotationPlanete
+  dureeRotation: 10
+  axeRotation: {x: 0, y: 1, z: 0}
+--- !u!1 &1084243697 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1901559596380486, guid: baebbc833ecda42dd8a75966c9f62420, type: 3}
+  m_PrefabInstance: {fileID: 1425249061}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1084243701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084243697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0795ccabc63332c41bbb3d43bc43c679, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotationPlanete
+  dureeRotation: 10
+  axeRotation: {x: 0, y: 1, z: 0}
 --- !u!1 &1351050295
 GameObject:
   m_ObjectHideFlags: 0
@@ -1305,7 +1444,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1901559596380486, guid: baebbc833ecda42dd8a75966c9f62420, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1084243701}
   m_SourcePrefab: {fileID: 100100000, guid: baebbc833ecda42dd8a75966c9f62420, type: 3}
 --- !u!1 &1507395161
 GameObject:
@@ -1394,7 +1536,7 @@ Transform:
   m_GameObject: {fileID: 1507395161}
   serializedVersion: 2
   m_LocalRotation: {x: -0.047908973, y: -0, z: -0, w: 0.9988517}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 237, y: -20, z: -230}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1456,6 +1598,7 @@ GameObject:
   - component: {fileID: 1626158916}
   - component: {fileID: 1626158915}
   - component: {fileID: 1626158914}
+  - component: {fileID: 1626158918}
   m_Layer: 0
   m_Name: Lune
   m_TagString: Untagged
@@ -1556,6 +1699,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1626158918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626158913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0795ccabc63332c41bbb3d43bc43c679, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotationPlanete
+  dureeRotation: 10
+  axeRotation: {x: 0, y: 1, z: 0}
 --- !u!1 &1670241434
 GameObject:
   m_ObjectHideFlags: 0
@@ -1568,6 +1725,7 @@ GameObject:
   - component: {fileID: 1670241437}
   - component: {fileID: 1670241436}
   - component: {fileID: 1670241435}
+  - component: {fileID: 1670241439}
   m_Layer: 0
   m_Name: Terre
   m_TagString: Untagged
@@ -1668,6 +1826,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1670241439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670241434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0795ccabc63332c41bbb3d43bc43c679, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotationPlanete
+  dureeRotation: 10
+  axeRotation: {x: 0, y: 1, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
