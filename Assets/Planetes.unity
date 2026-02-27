@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 170374437}
   - component: {fileID: 170374436}
   - component: {fileID: 170374440}
+  - component: {fileID: 170374441}
   m_Layer: 0
   m_Name: Soleil
   m_TagString: Untagged
@@ -246,6 +247,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RotationPlanete
   dureeRotation: 10
   axeRotation: {x: 0, y: 1, z: 0}
+--- !u!114 &170374441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170374435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16007af491ec9dc4e97346ba71020f6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Planet
+  mass: 1.989e+30
+  velocity: {x: 0, y: 0, z: 0}
+  planetName: 
+  radius: 0
 --- !u!1 &314256583
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,6 +276,7 @@ GameObject:
   - component: {fileID: 314256585}
   - component: {fileID: 314256584}
   - component: {fileID: 314256588}
+  - component: {fileID: 314256589}
   m_Layer: 0
   m_Name: Jupiter
   m_TagString: Untagged
@@ -373,6 +391,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RotationPlanete
   dureeRotation: 10
   axeRotation: {x: 0, y: 1, z: 0}
+--- !u!114 &314256589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314256583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16007af491ec9dc4e97346ba71020f6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Planet
+  mass: 1.898e+27
+  velocity: {x: 0, y: 0, z: 0}
+  planetName: 
+  radius: 0
 --- !u!1 &389347901
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,6 +534,136 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RotationPlanete
   dureeRotation: 10
   axeRotation: {x: 0, y: 1, z: 0}
+--- !u!1 &391434318
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 391434322}
+  - component: {fileID: 391434321}
+  - component: {fileID: 391434320}
+  - component: {fileID: 391434319}
+  - component: {fileID: 391434323}
+  m_Layer: 0
+  m_Name: Satellite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!136 &391434319
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391434318}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &391434320
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391434318}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &391434321
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391434318}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &391434322
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391434318}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.96696, y: 0, z: -10.51572}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &391434323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391434318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dc8663f58005a04a8c7d7ee8c457b91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Satellite
+  mass: 1000
+  velocity: {x: 0, y: 0, z: 500}
+  fuel: 100
 --- !u!1 &449870354
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,6 +869,7 @@ GameObject:
   - component: {fileID: 577685953}
   - component: {fileID: 577685952}
   - component: {fileID: 577685956}
+  - component: {fileID: 577685957}
   m_Layer: 0
   m_Name: Mars
   m_TagString: Untagged
@@ -819,6 +984,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RotationPlanete
   dureeRotation: 10
   axeRotation: {x: 0, y: 1, z: 0}
+--- !u!114 &577685957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577685951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16007af491ec9dc4e97346ba71020f6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Planet
+  mass: 6.39e+23
+  velocity: {x: 0, y: 0, z: 0}
+  planetName: 
+  radius: 0
 --- !u!1 &653530772
 GameObject:
   m_ObjectHideFlags: 0
@@ -1536,7 +1717,7 @@ Transform:
   m_GameObject: {fileID: 1507395161}
   serializedVersion: 2
   m_LocalRotation: {x: -0.047908973, y: -0, z: -0, w: 0.9988517}
-  m_LocalPosition: {x: -81, y: -13, z: -156}
+  m_LocalPosition: {x: -3.3, y: -0.7, z: -27.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1726,6 +1907,7 @@ GameObject:
   - component: {fileID: 1670241436}
   - component: {fileID: 1670241435}
   - component: {fileID: 1670241439}
+  - component: {fileID: 1670241440}
   m_Layer: 0
   m_Name: Terre
   m_TagString: Untagged
@@ -1840,6 +2022,66 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RotationPlanete
   dureeRotation: 10
   axeRotation: {x: 0, y: 1, z: 0}
+--- !u!114 &1670241440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670241434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16007af491ec9dc4e97346ba71020f6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Planet
+  mass: 5.972e+24
+  velocity: {x: 0, y: 0, z: 0}
+  planetName: 
+  radius: 0
+--- !u!1 &2000530153
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2000530155}
+  - component: {fileID: 2000530154}
+  m_Layer: 0
+  m_Name: SimulationManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2000530154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000530153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a7ee02c3b3cd544aef5ebc5b7c2098, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Gravity
+--- !u!4 &2000530155
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000530153}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.96696, y: 1, z: -10.51572}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1859,3 +2101,5 @@ SceneRoots:
   - {fileID: 449870358}
   - {fileID: 389347905}
   - {fileID: 170374439}
+  - {fileID: 391434322}
+  - {fileID: 2000530155}
