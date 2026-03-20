@@ -530,7 +530,7 @@ Transform:
   m_GameObject: {fileID: 389347901}
   serializedVersion: 2
   m_LocalRotation: {x: 0.23344536, y: 0, z: 0, w: 0.97236997}
-  m_LocalPosition: {x: 690.4, y: -846, z: -42}
+  m_LocalPosition: {x: 690.4, y: 0, z: -42}
   m_LocalScale: {x: 58.232, y: 58.232, z: 58.232}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -577,6 +577,7 @@ GameObject:
   - component: {fileID: 391434320}
   - component: {fileID: 391434319}
   - component: {fileID: 391434323}
+  - component: {fileID: 391434326}
   m_Layer: 0
   m_Name: Satellite
   m_TagString: Untagged
@@ -672,13 +673,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 391434318}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.96696, y: 0, z: -10.51572}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.20270416, y: -0.09383731, z: -0.019518184, w: 0.97453815}
+  m_LocalPosition: {x: 0.35, y: 3.01, z: -46.86}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -23.5, y: -11, z: 0}
 --- !u!114 &391434323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -694,6 +695,20 @@ MonoBehaviour:
   mass: 1000
   velocity: {x: 0, y: 0, z: 500}
   fuel: 100
+--- !u!114 &391434326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391434318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5f5add02f85de34d80f1f52322e8710, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlacerSatellite
+  terre: {fileID: 1670241438}
+  altitude: 0.01
 --- !u!1 &449870354
 GameObject:
   m_ObjectHideFlags: 0
@@ -1764,6 +1779,7 @@ GameObject:
   - component: {fileID: 1507395163}
   - component: {fileID: 1507395162}
   - component: {fileID: 1507395165}
+  - component: {fileID: 1507395166}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1889,6 +1905,21 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &1507395166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507395161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7b1bea6b8fdb1499ccfccb1e6fba50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SuivreSatellite
+  cible: {fileID: 391434322}
+  offset: {x: 0, y: 5, z: -10}
+  vitesseSuivi: 5
 --- !u!1 &1626158913
 GameObject:
   m_ObjectHideFlags: 0
