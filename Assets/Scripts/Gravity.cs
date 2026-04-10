@@ -1,46 +1,39 @@
+// Gravity.cs
 using UnityEngine;
 using System.Collections.Generic;
 
 public class Gravity : MonoBehaviour
 {
-    public static readonly float G = 6.674e-11f;
-
-    private List<Planet> planets = new List<Planet>();
+    public float G = 0.5f;
+    private List<CelestialBody> bodies = new List<CelestialBody>();
     private Satellite satellite;
 
     void Start()
     {
-        planets.AddRange(FindObjectsByType<Planet>(FindObjectsSortMode.None));
+        bodies.AddRange(FindObjectsByType<CelestialBody>(FindObjectsSortMode.None));
         satellite = FindFirstObjectByType<Satellite>();
+        if (satellite == null)
+            Debug.LogError("Satellite introuvable !");
     }
 
     void FixedUpdate()
     {
-        ApplyGravityPerPlanet(satellite);
-        UpdateSatellitePosition();
-    }
+        if (satellite == null) return;
 
-    public void ApplyGravityPerPlanet(Satellite sat)
-    {
-        foreach (Planet planet in planets)
+        foreach (CelestialBody body in bodies)
         {
-            Vector3 force = ComputeGravityFrom(planet, sat);
-            Vector3 acceleration = force / sat.mass;
-            sat.velocity += acceleration * Time.fixedDeltaTime;
+            // On skip le satellite lui-même
+            if (body == satellite) continue;
+
+            Vector3 direction = body.Position - satellite.Position;
+            float distance = direction.magnitude;
+            if (distance < 1f) continue;
+
+            float force = G * body.mass * satellite.mass / (distance * distance);
+            satellite.velocity += direction.normalized * force / satellite.mass * Time.fixedDeltaTime;
         }
-    }
 
-    public Vector3 ComputeGravityFrom(CelestialBody body, Satellite sat)
-    {
-        Vector3 direction = body.Position - sat.Position;
-        float distance = direction.magnitude;
-        if (distance < 0.1f) return Vector3.zero;
-        float forceMagnitude = G * body.mass * sat.mass / (distance * distance);
-        return direction.normalized * forceMagnitude;
-    }
-
-    private void UpdateSatellitePosition()
-    {
+        // Déplace le satellite
         satellite.transform.position += satellite.velocity * Time.fixedDeltaTime;
     }
 }

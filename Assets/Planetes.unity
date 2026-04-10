@@ -119,39 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &31315364 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1647581975099426, guid: 835acc1a9ebe24c0fa3854c99346f9cd, type: 3}
-  m_PrefabInstance: {fileID: 899060876}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &31315365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 31315364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0795ccabc63332c41bbb3d43bc43c679, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RotationPlanete
-  dureeRotation: 10
-  axeRotation: {x: 0, y: 1, z: 0}
---- !u!114 &31315366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 31315364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff7d8db19ddbd46efb0547f4136ad7f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Orbite
-  sun: {fileID: 868980553}
-  orbitSpeed: 20
 --- !u!1001 &68520301
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -219,58 +186,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1856687845478954, guid: ab152f61198d54532ae39108e616ff59, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1330999269}
-    - targetCorrespondingSourceObject: {fileID: 1856687845478954, guid: ab152f61198d54532ae39108e616ff59, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1330999268}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab152f61198d54532ae39108e616ff59, type: 3}
---- !u!1 &245257870
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 245257872}
-  - component: {fileID: 245257871}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &245257871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 245257870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18d8bf3cd656a4bd19d6f9c47714f27f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameManager
---- !u!4 &245257872
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 245257870}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -303.38925, y: 0, z: 7.92628}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &391434318
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,8 +200,9 @@ GameObject:
   - component: {fileID: 391434321}
   - component: {fileID: 391434320}
   - component: {fileID: 391434319}
+  - component: {fileID: 391434325}
+  - component: {fileID: 391434324}
   - component: {fileID: 391434323}
-  - component: {fileID: 391434326}
   m_Layer: 0
   m_Name: Satellite
   m_TagString: Untagged
@@ -380,14 +298,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 391434318}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.20270416, y: -0.09383731, z: -0.019518184, w: 0.97453815}
-  m_LocalPosition: {x: 0.35, y: 5, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1507395164}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -23.5, y: -11, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &391434323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391434318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9740bbb3d47b741901d9af1374ce81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SatelliteController
+  puissance: 1
+--- !u!114 &391434324
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -399,10 +331,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dc8663f58005a04a8c7d7ee8c457b91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Satellite
-  mass: 1000
-  velocity: {x: 0, y: 0, z: 500}
+  mass: 1
+  velocity: {x: 2, y: 0, z: 0}
   fuel: 100
---- !u!114 &391434326
+--- !u!114 &391434325
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -411,11 +343,56 @@ MonoBehaviour:
   m_GameObject: {fileID: 391434318}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5f5add02f85de34d80f1f52322e8710, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e02c0f9322216b4a82ab5ec5969396c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlacerSatellite
-  terre: {fileID: 1670241438}
-  altitude: 0.01
+  m_EditorClassIdentifier: Assembly-CSharp::CelestialBody
+  mass: 1
+  velocity: {x: 0, y: 0, z: 0}
+--- !u!1 &461086347
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 461086349}
+  - component: {fileID: 461086348}
+  m_Layer: 0
+  m_Name: GravityManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &461086348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461086347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a7ee02c3b3cd544aef5ebc5b7c2098, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Gravity
+  G: 0.5
+--- !u!4 &461086349
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461086347}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 585.9985, y: 4.37, z: -3.14007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &479916667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -481,39 +458,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f2918771afc4e07b0a2018e54d57ec, type: 3}
---- !u!1 &620213838 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1014736895960144, guid: c91342f6e3afc48fd958056404ead345, type: 3}
-  m_PrefabInstance: {fileID: 1518172666}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &620213839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 620213838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0795ccabc63332c41bbb3d43bc43c679, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RotationPlanete
-  dureeRotation: 10
-  axeRotation: {x: 0, y: 1, z: 0}
---- !u!114 &620213840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 620213838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff7d8db19ddbd46efb0547f4136ad7f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Orbite
-  sun: {fileID: 868980553}
-  orbitSpeed: 20
 --- !u!1 &738863311
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,11 +489,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &868980553 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1229251971759408710, guid: 5f776740c447e45afb25edbca842de92, type: 3}
-  m_PrefabInstance: {fileID: 1438178841}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &899060876
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -617,13 +556,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1647581975099426, guid: 835acc1a9ebe24c0fa3854c99346f9cd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 31315366}
-    - targetCorrespondingSourceObject: {fileID: 1647581975099426, guid: 835acc1a9ebe24c0fa3854c99346f9cd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 31315365}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 835acc1a9ebe24c0fa3854c99346f9cd, type: 3}
 --- !u!1 &916502265
 GameObject:
@@ -723,47 +656,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1610884164528438, guid: 5d1442ad8c11442988e0eca5d8af73f0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1291924975}
-    - targetCorrespondingSourceObject: {fileID: 1610884164528438, guid: 5d1442ad8c11442988e0eca5d8af73f0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1291924974}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d1442ad8c11442988e0eca5d8af73f0, type: 3}
---- !u!1 &1084243697 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1901559596380486, guid: baebbc833ecda42dd8a75966c9f62420, type: 3}
-  m_PrefabInstance: {fileID: 1425249061}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1084243701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1084243697}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0795ccabc63332c41bbb3d43bc43c679, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RotationPlanete
-  dureeRotation: 10
-  axeRotation: {x: 0, y: 1, z: 0}
---- !u!114 &1084243702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1084243697}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff7d8db19ddbd46efb0547f4136ad7f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Orbite
-  sun: {fileID: 868980553}
-  orbitSpeed: 0.474
 --- !u!1001 &1232633694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -847,80 +741,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1377197793697218, guid: b4201d402613a4464b35c805dafcca62, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1752730236}
-    - targetCorrespondingSourceObject: {fileID: 1377197793697218, guid: b4201d402613a4464b35c805dafcca62, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1752730235}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4201d402613a4464b35c805dafcca62, type: 3}
---- !u!1 &1291924973 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1610884164528438, guid: 5d1442ad8c11442988e0eca5d8af73f0, type: 3}
-  m_PrefabInstance: {fileID: 1064166627}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1291924974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1291924973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0795ccabc63332c41bbb3d43bc43c679, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RotationPlanete
-  dureeRotation: 10
-  axeRotation: {x: 0, y: 1, z: 0}
---- !u!114 &1291924975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1291924973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff7d8db19ddbd46efb0547f4136ad7f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Orbite
-  sun: {fileID: 868980553}
-  orbitSpeed: 20
---- !u!1 &1330999267 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1856687845478954, guid: ab152f61198d54532ae39108e616ff59, type: 3}
-  m_PrefabInstance: {fileID: 68520301}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1330999268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1330999267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0795ccabc63332c41bbb3d43bc43c679, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RotationPlanete
-  dureeRotation: 10
-  axeRotation: {x: 0, y: 1, z: 0}
---- !u!114 &1330999269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1330999267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff7d8db19ddbd46efb0547f4136ad7f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Orbite
-  sun: {fileID: 868980553}
-  orbitSpeed: 20
 --- !u!1 &1351050295
 GameObject:
   m_ObjectHideFlags: 0
@@ -1115,13 +937,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1901559596380486, guid: baebbc833ecda42dd8a75966c9f62420, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1084243701}
-    - targetCorrespondingSourceObject: {fileID: 1901559596380486, guid: baebbc833ecda42dd8a75966c9f62420, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1084243702}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: baebbc833ecda42dd8a75966c9f62420, type: 3}
 --- !u!1001 &1438178841
 PrefabInstance:
@@ -1204,7 +1020,6 @@ GameObject:
   - component: {fileID: 1507395163}
   - component: {fileID: 1507395162}
   - component: {fileID: 1507395165}
-  - component: {fileID: 1507395166}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1279,13 +1094,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1507395161}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.047908973, y: -0, z: -0, w: 0.9988517}
-  m_LocalPosition: {x: -3.3, y: -0.7, z: -27.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2, z: -10}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -5.492, y: 0, z: 0}
+  m_Father: {fileID: 391434322}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1507395165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1330,21 +1145,6 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
---- !u!114 &1507395166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1507395161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e7b1bea6b8fdb1499ccfccb1e6fba50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SuivreSatellite
-  cible: {fileID: 391434322}
-  offset: {x: 0, y: 5, z: -10}
-  vitesseSuivi: 5
 --- !u!1001 &1518172666
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1412,47 +1212,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1014736895960144, guid: c91342f6e3afc48fd958056404ead345, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 620213840}
-    - targetCorrespondingSourceObject: {fileID: 1014736895960144, guid: c91342f6e3afc48fd958056404ead345, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 620213839}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c91342f6e3afc48fd958056404ead345, type: 3}
---- !u!1 &1559771553 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1288793558353234, guid: 1818e1a170ef94c3aacee2ba50057521, type: 3}
-  m_PrefabInstance: {fileID: 1695301170}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1559771554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1559771553}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0795ccabc63332c41bbb3d43bc43c679, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RotationPlanete
-  dureeRotation: 10
-  axeRotation: {x: 0, y: 1, z: 0}
---- !u!114 &1559771555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1559771553}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff7d8db19ddbd46efb0547f4136ad7f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Orbite
-  sun: {fileID: 868980553}
-  orbitSpeed: 20
 --- !u!1 &1626158913
 GameObject:
   m_ObjectHideFlags: 0
@@ -1465,8 +1226,6 @@ GameObject:
   - component: {fileID: 1626158916}
   - component: {fileID: 1626158915}
   - component: {fileID: 1626158914}
-  - component: {fileID: 1626158918}
-  - component: {fileID: 1626158919}
   m_Layer: 0
   m_Name: Lune
   m_TagString: Untagged
@@ -1567,34 +1326,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1626158918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1626158913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0795ccabc63332c41bbb3d43bc43c679, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RotationPlanete
-  dureeRotation: 10
-  axeRotation: {x: 0, y: 1, z: 0}
---- !u!114 &1626158919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1626158913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff7d8db19ddbd46efb0547f4136ad7f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Orbite
-  sun: {fileID: 1670241438}
-  orbitSpeed: 100
 --- !u!1 &1670241434
 GameObject:
   m_ObjectHideFlags: 0
@@ -1607,9 +1338,6 @@ GameObject:
   - component: {fileID: 1670241437}
   - component: {fileID: 1670241436}
   - component: {fileID: 1670241435}
-  - component: {fileID: 1670241439}
-  - component: {fileID: 1670241440}
-  - component: {fileID: 1670241441}
   m_Layer: 0
   m_Name: Terre
   m_TagString: Untagged
@@ -1704,56 +1432,12 @@ Transform:
   m_GameObject: {fileID: 1670241434}
   serializedVersion: 2
   m_LocalRotation: {x: 0.20364177, y: 0, z: 0, w: 0.97904545}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 50}
   m_LocalScale: {x: 7, y: 7, z: 7}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 23.5, y: 0, z: 0}
---- !u!114 &1670241439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1670241434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0795ccabc63332c41bbb3d43bc43c679, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RotationPlanete
-  dureeRotation: 10
-  axeRotation: {x: 0, y: 1, z: 0}
---- !u!114 &1670241440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1670241434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16007af491ec9dc4e97346ba71020f6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Planet
-  mass: 5.972e+24
-  velocity: {x: 0, y: 0, z: 0}
-  planetName: 
-  radius: 0
---- !u!114 &1670241441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1670241434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff7d8db19ddbd46efb0547f4136ad7f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Orbite
-  sun: {fileID: 868980553}
-  orbitSpeed: 2.978
 --- !u!1001 &1695301170
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1821,80 +1505,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1288793558353234, guid: 1818e1a170ef94c3aacee2ba50057521, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1559771555}
-    - targetCorrespondingSourceObject: {fileID: 1288793558353234, guid: 1818e1a170ef94c3aacee2ba50057521, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1559771554}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1818e1a170ef94c3aacee2ba50057521, type: 3}
---- !u!1 &1752730234 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1377197793697218, guid: b4201d402613a4464b35c805dafcca62, type: 3}
-  m_PrefabInstance: {fileID: 1232633694}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1752730235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1752730234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0795ccabc63332c41bbb3d43bc43c679, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RotationPlanete
-  dureeRotation: 10
-  axeRotation: {x: 0, y: 1, z: 0}
---- !u!114 &1752730236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1752730234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff7d8db19ddbd46efb0547f4136ad7f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Orbite
-  sun: {fileID: 868980553}
-  orbitSpeed: 20
---- !u!1 &1779646494 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1526814149960808, guid: 7e4bfb3c6ba1d4bc4ba31d585abdae0f, type: 3}
-  m_PrefabInstance: {fileID: 1993830119}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1779646495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779646494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0795ccabc63332c41bbb3d43bc43c679, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RotationPlanete
-  dureeRotation: 10
-  axeRotation: {x: 0, y: 1, z: 0}
---- !u!114 &1779646496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779646494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff7d8db19ddbd46efb0547f4136ad7f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Orbite
-  sun: {fileID: 868980553}
-  orbitSpeed: 20
 --- !u!1001 &1993830119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1962,63 +1574,12 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1526814149960808, guid: 7e4bfb3c6ba1d4bc4ba31d585abdae0f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1779646496}
-    - targetCorrespondingSourceObject: {fileID: 1526814149960808, guid: 7e4bfb3c6ba1d4bc4ba31d585abdae0f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1779646495}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e4bfb3c6ba1d4bc4ba31d585abdae0f, type: 3}
---- !u!1 &2000530153
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2000530155}
-  - component: {fileID: 2000530154}
-  m_Layer: 0
-  m_Name: SimulationManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2000530154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2000530153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31a7ee02c3b3cd544aef5ebc5b7c2098, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Gravity
---- !u!4 &2000530155
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2000530153}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.96696, y: 1, z: -10.51572}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1507395164}
   - {fileID: 1351050298}
   - {fileID: 1670241438}
   - {fileID: 1626158917}
@@ -2026,7 +1587,6 @@ SceneRoots:
   - {fileID: 1425249061}
   - {fileID: 916502266}
   - {fileID: 391434322}
-  - {fileID: 2000530155}
   - {fileID: 1232633694}
   - {fileID: 1438178841}
   - {fileID: 68520301}
@@ -2035,5 +1595,5 @@ SceneRoots:
   - {fileID: 1993830119}
   - {fileID: 1518172666}
   - {fileID: 1064166627}
-  - {fileID: 245257872}
   - {fileID: 738863312}
+  - {fileID: 461086349}
