@@ -11,4 +11,9 @@ public class Satellite : CelestialBody
         velocity += deltaV;
         fuel -= deltaV.magnitude;
     }
+
+    void Start()
+    {
+        velocity = Vector3.zero; // ✅ bloque au départ
+    }
 }
