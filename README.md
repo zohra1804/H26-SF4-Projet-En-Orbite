@@ -10,9 +10,10 @@ Il est difficile de comprendre le fonctionnement d’un satellite. C’est un ap
 
 Notre programme permettra de modéliser le mouvement de satellites lors de leur poussée initiale sur Terre, et leur comportement une fois dans l’espace. Cela va aider à expliquer comment ce dernier se comporte de telle façon à orbiter une planète avec des calculs de force gravitationnelle simplifiés. 
 
- 
+ <img width="1442" height="861" alt="t" src="https://github.com/user-attachments/assets/329bef6a-5420-43b4-ab22-39196aac2f0b" />
+ <img width="471" height="281" alt="image" src="https://github.com/user-attachments/assets/41c37aba-b63c-4e28-bf0e-109c132cbd11" />
 
- 
+
 
  
 
